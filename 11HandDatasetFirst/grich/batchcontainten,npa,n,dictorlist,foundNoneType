@@ -1,0 +1,54 @@
+Traceback (most recent call last):
+  File "/home/boris.grillborzer/PycharmProjects2/00CNNundRNN/boris.grillborzer/11HandDatasetFirst/main.py", line 43, in <module>
+    train(n_epochs, dataloader_train)
+  File "/home/boris.grillborzer/PycharmProjects2/00CNNundRNN/boris.grillborzer/11HandDatasetFirst/train.py", line 59, in train
+    for img, target in dataloader_train:
+  File "/home/boris.grillborzer/miniconda3/envs/venv00/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 630, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "/home/boris.grillborzer/miniconda3/envs/venv00/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 1344, in _next_data
+    return self._process_data(data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/boris.grillborzer/miniconda3/envs/venv00/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 1370, in _process_data
+    data.reraise()
+  File "/home/boris.grillborzer/miniconda3/envs/venv00/lib/python3.11/site-packages/torch/_utils.py", line 706, in reraise
+    raise exception
+TypeError: Caught TypeError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/boris.grillborzer/miniconda3/envs/venv00/lib/python3.11/site-packages/torch/utils/data/_utils/collate.py", line 155, in collate
+    clone.update({key: collate([d[key] for d in batch], collate_fn_map=collate_fn_map) for key in elem})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/boris.grillborzer/miniconda3/envs/venv00/lib/python3.11/site-packages/torch/utils/data/_utils/collate.py", line 155, in <dictcomp>
+    clone.update({key: collate([d[key] for d in batch], collate_fn_map=collate_fn_map) for key in elem})
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/boris.grillborzer/miniconda3/envs/venv00/lib/python3.11/site-packages/torch/utils/data/_utils/collate.py", line 192, in collate
+    raise TypeError(default_collate_err_msg_format.format(elem_type))
+TypeError: default_collate: batch must contain tensors, numpy arrays, numbers, dicts or lists; found <class 'NoneType'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/boris.grillborzer/miniconda3/envs/venv00/lib/python3.11/site-packages/torch/utils/data/_utils/worker.py", line 309, in _worker_loop
+    data = fetcher.fetch(index)  # type: ignore[possibly-undefined]
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/boris.grillborzer/miniconda3/envs/venv00/lib/python3.11/site-packages/torch/utils/data/_utils/fetch.py", line 55, in fetch
+    return self.collate_fn(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/boris.grillborzer/miniconda3/envs/venv00/lib/python3.11/site-packages/torch/utils/data/_utils/collate.py", line 317, in default_collate
+    return collate(batch, collate_fn_map=default_collate_fn_map)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/boris.grillborzer/miniconda3/envs/venv00/lib/python3.11/site-packages/torch/utils/data/_utils/collate.py", line 174, in collate
+    return [collate(samples, collate_fn_map=collate_fn_map) for samples in transposed]  # Backwards compatibility.
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/boris.grillborzer/miniconda3/envs/venv00/lib/python3.11/site-packages/torch/utils/data/_utils/collate.py", line 174, in <listcomp>
+    return [collate(samples, collate_fn_map=collate_fn_map) for samples in transposed]  # Backwards compatibility.
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/boris.grillborzer/miniconda3/envs/venv00/lib/python3.11/site-packages/torch/utils/data/_utils/collate.py", line 162, in collate
+    return {key: collate([d[key] for d in batch], collate_fn_map=collate_fn_map) for key in elem}
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/boris.grillborzer/miniconda3/envs/venv00/lib/python3.11/site-packages/torch/utils/data/_utils/collate.py", line 162, in <dictcomp>
+    return {key: collate([d[key] for d in batch], collate_fn_map=collate_fn_map) for key in elem}
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/boris.grillborzer/miniconda3/envs/venv00/lib/python3.11/site-packages/torch/utils/data/_utils/collate.py", line 192, in collate
+    raise TypeError(default_collate_err_msg_format.format(elem_type))
+TypeError: default_collate: batch must contain tensors, numpy arrays, numbers, dicts or lists; found <class 'NoneType'>

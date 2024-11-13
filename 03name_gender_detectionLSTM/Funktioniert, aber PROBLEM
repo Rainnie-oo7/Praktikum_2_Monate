@@ -1,0 +1,13 @@
+Kann es sein dass zw. Zeilen 289 - 347 die Trainingsdaten und Evaluierungs/Testdaten miteinander in Berührung kommen? (vemischt werden)
+Akkuranz 0,77 % !!! Blitz                                            ^ Sollen sie ja Nein mit Testdaten nicht
+                                                Wieso ist Acc so niedrig?
+
+Des Weiteren:
+Der Skript stoppt nach dem "Training = done."
+
+Erst bei wiederholter Ausführung gibt er uns Prediction
+Akkuranz 0.41 % !!! Blitz                   im Modell oder den Datenverarbeitungsprozessen Probleme
+                                            Durch Anpassung der Modellarchitektur, Verbesserung der Trainingsdaten, Optimierung der Hyperparameter
+                                            oder Einführung von Regularisierung könntest du die Leistung erheblich verbessern.
+
+Was würde es bringen, Batch-Size zu verringern => mehr generalisierung oder wen.?

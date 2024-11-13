@@ -1,0 +1,45 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+Traceback (most recent call last):
+  File "/home/me/PycharmProjects2/00CNNundRNN/boris.grillborzer/11HandDatasetFirst/train.py", line 121, in <module>
+    output = model(images, targets)  # Returns losses and detections
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/me/miniconda3/envs/venv00/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/me/miniconda3/envs/venv00/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/me/miniconda3/envs/venv00/lib/python3.11/site-packages/torchvision/models/detection/generalized_rcnn.py", line 83, in forward
+    images, targets = self.transform(images, targets)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/me/miniconda3/envs/venv00/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/me/miniconda3/envs/venv00/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/me/miniconda3/envs/venv00/lib/python3.11/site-packages/torchvision/models/detection/transform.py", line 144, in forward
+    image, target_index = self.resize(image, target_index)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/me/miniconda3/envs/venv00/lib/python3.11/site-packages/torchvision/models/detection/transform.py", line 202, in resize
+    bbox = resize_boxes(bbox, (h, w), image.shape[-2:])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/me/miniconda3/envs/venv00/lib/python3.11/site-packages/torchvision/models/detection/transform.py", line 313, in resize_boxes
+    ratios = [
+             ^
+  File "/home/me/miniconda3/envs/venv00/lib/python3.11/site-packages/torchvision/models/detection/transform.py", line 314, in <listcomp>
+    torch.tensor(s, dtype=torch.float32, device=boxes.device)
+                                                ^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'device'

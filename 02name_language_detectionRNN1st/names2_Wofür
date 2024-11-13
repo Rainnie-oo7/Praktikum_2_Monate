@@ -1,0 +1,2 @@
+Ich wollte, dass load(char-rnn-classification.pt) sofort einliest, sodass das Modell nicht immer neu trainieren muss?
+wie bei 03name_gender_detection

@@ -1,0 +1,9 @@
+imagedevice1 cpu
+imagedevice1 cpu
+
+
+Traceback (most recent call last):
+  File "/home/boris.grillborzer/PycharmProjects2/00CNNundRNN/boris.grillborzer/11HandDatasetFirst/train.py", line 115, in <module>
+    print("boxes device:",  target[0]("boxes").device)
+                            ^^^^^^^^^^^^^^^^^^
+TypeError: 'dict' object is not callable

@@ -1,0 +1,51 @@
+/home/boris.grillborzer/miniconda3/envs/venv00/bin/python /home/boris.grillborzer/PycharmProjects2/00CNNundRNN/boris.grillborzer/11HandDatasetFirst/train.py
+2024-10-28 14:54:21.544553: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:485] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2024-10-28 14:54:21.562206: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:8454] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2024-10-28 14:54:21.567619: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1452] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2024-10-28 14:54:21.580587: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-10-28 14:54:22.327655: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+/home/boris.grillborzer/PycharmProjects2/00CNNundRNN/boris.grillborzer/11HandDatasetFirst/data/CARDS_COURTYARD_H_S
+/home/boris.grillborzer/PycharmProjects2/00CNNundRNN/boris.grillborzer/11HandDatasetFirst/data/CARDS_COURTYARD_B_T
+/home/boris.grillborzer/PycharmProjects2/00CNNundRNN/boris.grillborzer/11HandDatasetFirst/data/CARDS_COURTYARD_H_S
+/home/boris.grillborzer/PycharmProjects2/00CNNundRNN/boris.grillborzer/11HandDatasetFirst/data/CARDS_COURTYARD_B_T
+halo
+/home/boris.grillborzer/PycharmProjects2/00CNNundRNN/boris.grillborzer/11HandDatasetFirst/data/CARDS_COURTYARD_H_S
+/home/boris.grillborzer/PycharmProjects2/00CNNundRNN/boris.grillborzer/11HandDatasetFirst/data/CARDS_COURTYARD_B_T
+array1 hat nicht genug Elemente. Es hat: 1
+array1 hat nicht genug Elemente. Es hat: 44
+array1 hat nicht genug Elemente. Es hat: 88
+array1 hat nicht genug Elemente. Es hat: 103
+boxes_labels_data tensor([[ 158.1907,  725.6134,  435.0567,  718.7680],
+        [ 486.7680, 1104.3351,  362.4794,  718.7680],
+        [ 158.1907, 1110.9330,  283.3041,  630.3557],
+        [ 486.7680,  812.7062,  229.2010,  712.1701]], dtype=torch.float64)
+boxes_labels_datatype <class 'torch.Tensor'>
+imgshape torch.Size([3, 720, 1280])
+array1 hat nicht genug Elemente. Es hat: 1
+array1 hat nicht genug Elemente. Es hat: 44
+array1 hat nicht genug Elemente. Es hat: 88
+array1 hat nicht genug Elemente. Es hat: 103
+boxes_labels_data tensor([[ 158.1907,  725.6134,  435.0567,  718.7680],
+        [ 486.7680, 1104.3351,  362.4794,  718.7680],
+        [ 158.1907, 1110.9330,  283.3041,  630.3557],
+        [ 486.7680,  812.7062,  229.2010,  712.1701]], dtype=torch.float64)
+boxes_labels_datatype <class 'torch.Tensor'>
+imgshape torch.Size([3, 720, 1280])
+Traceback (most recent call last):
+  File "/home/boris.grillborzer/PycharmProjects2/00CNNundRNN/boris.grillborzer/11HandDatasetFirst/train.py", line 112, in <module>
+    output = model(images, targets)  # Returns losses and detections
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/boris.grillborzer/miniconda3/envs/venv00/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/boris.grillborzer/miniconda3/envs/venv00/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/boris.grillborzer/miniconda3/envs/venv00/lib/python3.11/site-packages/torchvision/models/detection/generalized_rcnn.py", line 65, in forward
+    boxes = torch.stack([item['boxes'] for item in target])                    # boxes = target["boxes"]
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/boris.grillborzer/miniconda3/envs/venv00/lib/python3.11/site-packages/torchvision/models/detection/generalized_rcnn.py", line 65, in <listcomp>
+    boxes = torch.stack([item['boxes'] for item in target])                    # boxes = target["boxes"]
+                         ~~~~^^^^^^^^^
+IndexError: too many indices for tensor of dimension 1

@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "/home/boris.grillborzer/PycharmProjects2/00CNNundRNN/boris.grillborzer/11HandDatasetFirst/main.py", line 45, in <module>
+    train(n_epochs, model, dataloader_train)
+  File "/home/boris.grillborzer/PycharmProjects2/00CNNundRNN/boris.grillborzer/11HandDatasetFirst/train.py", line 60, in train
+    pred = model(img, target)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/boris.grillborzer/miniconda3/envs/venv00/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/boris.grillborzer/miniconda3/envs/venv00/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/boris.grillborzer/miniconda3/envs/venv00/lib/python3.11/site-packages/torchvision/models/detection/generalized_rcnn.py", line 72, in forward
+    torch._assert(False, f"Expected target boxes to be of type Tensor, got {type(boxes)}.")
+  File "/home/boris.grillborzer/miniconda3/envs/venv00/lib/python3.11/site-packages/torch/__init__.py", line 1777, in _assert
+    assert condition, message
+           ^^^^^^^^^
+AssertionError: Expected target boxes to be of type Tensor, got <class 'str'>.

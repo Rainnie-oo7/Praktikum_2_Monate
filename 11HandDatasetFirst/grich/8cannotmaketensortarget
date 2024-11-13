@@ -1,0 +1,21 @@
+Traceback (most recent call last):
+  File "G:\Meine Ablage\boris.grillborzer\11HandDatasetFirst\main.py", line 45, in <module>
+    train(5, dataloader_train)
+  File "G:\Meine Ablage\boris.grillborzer\11HandDatasetFirst\train.py", line 85, in train
+    for batch, (img, target) in enumerate(dataloader_train, 0):
+  File "C:\Users\Boris Grillborzer\AppData\Roaming\Python\Python311\site-packages\torch\utils\data\dataloader.py", line 630, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boris Grillborzer\AppData\Roaming\Python\Python311\site-packages\torch\utils\data\dataloader.py", line 673, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boris Grillborzer\AppData\Roaming\Python\Python311\site-packages\torch\utils\data\_utils\fetch.py", line 52, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boris Grillborzer\AppData\Roaming\Python\Python311\site-packages\torch\utils\data\_utils\fetch.py", line 52, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+            ~~~~~~~~~~~~^^^^^
+  File "G:\Meine Ablage\boris.grillborzer\11HandDatasetFirst\Mydatasetsofortmaskelabeleinpfad.py", line 221, in __getitem__
+    target = torch.tensor(target, dtype=torch.long)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'dict' object cannot be interpreted as an integer

@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/home/boris.grillborzer/PycharmProjects2/00CNNundRNN/boris.grillborzer/11HandDatasetFirst/main.py", line 43, in <module>
+    train(n_epochs, dataloader_train)
+  File "/home/boris.grillborzer/PycharmProjects2/00CNNundRNN/boris.grillborzer/11HandDatasetFirst/train.py", line 57, in train
+    for batch, (img, target) in dataloader_train:
+               ^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 2)

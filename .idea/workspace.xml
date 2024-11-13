@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d0b4a05c-a77a-4da4-82c0-60022ff4ca97" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/11HandDatasetFirst/ich/train.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15PedestrianDatasetFirst/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11HandDatasetFirst/MydatasetEPO5.py" beforeDir="false" afterPath="$PROJECT_DIR$/11HandDatasetFirst/MydatasetEPO5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11HandDatasetFirst/extract_polygons1.py" beforeDir="false" afterPath="$PROJECT_DIR$/11HandDatasetFirst/extract_polygons1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11HandDatasetFirst/grich/MydatasetEPO.py" beforeDir="false" afterPath="$PROJECT_DIR$/11HandDatasetFirst/grich/MydatasetEPO.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11HandDatasetFirst/grich/MydatasetEPO2.py" beforeDir="false" afterPath="$PROJECT_DIR$/11HandDatasetFirst/grich/MydatasetEPO2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11HandDatasetFirst/grich/MydatasetEPO2copie.py" beforeDir="false" afterPath="$PROJECT_DIR$/11HandDatasetFirst/grich/MydatasetEPO2copie.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11HandDatasetFirst/grich/MydatasetEPO3.py" beforeDir="false" afterPath="$PROJECT_DIR$/11HandDatasetFirst/grich/MydatasetEPO3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11HandDatasetFirst/grich/MydatasetEPO3copie.py" beforeDir="false" afterPath="$PROJECT_DIR$/11HandDatasetFirst/grich/MydatasetEPO3copie.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11HandDatasetFirst/grich/MydatasetEPO4.py" beforeDir="false" afterPath="$PROJECT_DIR$/11HandDatasetFirst/grich/MydatasetEPO4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11HandDatasetFirst/grich/MydatasetEPOme.py" beforeDir="false" afterPath="$PROJECT_DIR$/11HandDatasetFirst/grich/MydatasetEPOme.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11HandDatasetFirst/grich/Mydatasetepocopie1.py" beforeDir="false" afterPath="$PROJECT_DIR$/11HandDatasetFirst/grich/Mydatasetepocopie1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11HandDatasetFirst/ich/Mydatasetcopie.py" beforeDir="false" afterPath="$PROJECT_DIR$/11HandDatasetFirst/Mydatasetcopie.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11HandDatasetFirst/ich/isg.py" beforeDir="false" afterPath="$PROJECT_DIR$/11HandDatasetFirst/ich/readmat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11HandDatasetFirst/readmatanddraw/main_umgekehrtesIterationMat99koUNDBilder.py" beforeDir="false" afterPath="$PROJECT_DIR$/11HandDatasetFirst/readmatanddraw/main_umgekehrtesIterationMat99koUNDBilder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12CustomDatasetFudanPedNullst/torchvision_tutorial.py" beforeDir="false" afterPath="$PROJECT_DIR$/12CustomDatasetFudanPedNullst/torchvision_tutorial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/15PedestrianDatasetFirst/PennFudanDataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/15PedestrianDatasetFirst/PennFudanDataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/15PedestrianDatasetFirst/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/15PedestrianDatasetFirst/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/15PedestrianDatasetFirst/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/15PedestrianDatasetFirst/testing_the_prototype.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/15PedestrianDatasetFirst/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/15PedestrianDatasetFirst/utils.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2oTQ5dfdnLlQAnLoAOn5vG2ELMB" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.extract_polygons.executor": "Run",
+    "Python.extract_polygons1.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "c55d8459",
+    "last_opened_file_path": "/home/boris.grillborzer/PycharmProjects/TutorialTest"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-d7ad00fb9fc3-c546a90a8094-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.23726.102" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d0b4a05c-a77a-4da4-82c0-60022ff4ca97" name="Changes" comment="" />
+      <created>1730890903641</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1730890903641</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/11HandDatasetFirst/extract_polygons1.py</url>
+          <line>43</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
