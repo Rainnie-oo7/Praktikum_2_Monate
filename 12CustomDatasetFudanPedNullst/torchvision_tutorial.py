@@ -411,6 +411,9 @@ data_loader = torch.utils.data.DataLoader(
 # For Training
 images, targets = next(iter(data_loader))
 images = list(image for image in images)
+print(images.shape)
+print(targets.shape)
+asvd
 targets = [{k: v for k, v in t.items()} for t in targets]
 output = model(images, targets)  # Returns losses and detections
 print(output)

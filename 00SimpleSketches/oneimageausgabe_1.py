@@ -4,7 +4,7 @@ from torchvision.io import read_image
 import torch
 
 # Maske laden
-mask = read_image("PennFudanPed/PedMasks/FudanPed00046_mask.png")[0]  # Nur ein Kanal
+mask = read_image("../12CustomDatasetFudanPedNullst/PennFudanPed/PedMasks/FudanPed00046_mask.png")[0]  # Nur ein Kanal
 unique_ids = mask.unique()  # Finde die IDs in der Maske
 
 # Definiere Farben für jedes Objekt

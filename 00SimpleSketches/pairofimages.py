@@ -2,8 +2,8 @@ import matplotlib.pyplot as plt
 from torchvision.io import read_image
 
 # Lade das Bild und die Maske
-image = read_image("PennFudanPed/PNGImages/FudanPed00046.png")
-mask = read_image("PennFudanPed/PedMasks/FudanPed00046_mask.png")
+image = read_image("../12CustomDatasetFudanPedNullst/PennFudanPed/PNGImages/FudanPed00046.png")
+mask = read_image("../12CustomDatasetFudanPedNullst/PennFudanPed/PedMasks/FudanPed00046_mask.png")
 
 # Bild und Maske anzeigen
 plt.figure(figsize=(16, 8))

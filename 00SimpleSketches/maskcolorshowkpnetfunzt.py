@@ -6,7 +6,7 @@ from torchvision.io import read_image
 path = '''/home/boris.grillborzer/Downloads/LabPicsV1/Complex/Train/Beautiful Chemical Chameleon (KMnO4+NaOH+Sugar+H2O - Color Changing) + 200 SUBS !-screenshot (1)/ignore.png'''
 # Load the binary mask image
 # mask_image = cv2.imread(path, cv2.IMREAD_GRAYSCALE)
-mask_image = read_image("PennFudanPed/PedMasks/FudanPed00046_mask.png")
+mask_image = read_image("../12CustomDatasetFudanPedNullst/PennFudanPed/PedMasks/FudanPed00046_mask.png")
 print(type(mask_image))
 print(mask_image)
 
