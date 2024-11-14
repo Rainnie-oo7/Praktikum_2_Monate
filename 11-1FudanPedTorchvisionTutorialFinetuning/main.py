@@ -1,4 +1,6 @@
-from engine import train_one_epoch, evaluate
+from references.detection.engine import train_one_epoch, evaluate
+import references.detection.utils
+from torchvision_tutorial import *
 
 # train on the GPU or on the CPU, if a GPU is not available
 device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
